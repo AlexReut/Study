@@ -1,0 +1,31 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Красная кнопка</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1" />
+	<link rel="stylesheet" href="./Red Button.css" />
+</head>
+<body>
+	<div id="btn-wrap">
+        <div id="app"></div>
+    </div>
+	<script>
+   window.addEventListener('DOMContentLoaded', () => {
+        preloadImage('imgs/red-btn-p.png');
+        preloadImage('imgs/green-btn.png');
+        preloadImage('imgs/green-btn-p.png');
+        preloadImage('imgs/blue-btn.png');
+        preloadImage('imgs/blue-btn-p.png');
+      var game = new Game({
+        clickDelay: 600,
+        wrapperSelector: '#app',
+        stagesUrl: './Red Button.json',
+      });
+      localStorage.bigGamePlayed = true;
+    })
+</script>
+    <script src="./Red Button.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.img-container {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Images Side by Side</h2>
+<p>With the CSS float property, it is easy to float images side by side:</p>
+
+<div class="clearfix">
+  <div class="img-container">
+    <img src="./button_red.png" alt="Fjords" style="width:100%">
+  </div>
+  <div class="img-container">
+    <img src="./button_green.png" alt="Forest" style="width:100%">
+  </div>
+  <div class="img-container">
+    <img src="./button.png" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
