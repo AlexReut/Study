@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+     // вывести список возрастов и подписать категорию
+      for (i=0;i<101;i++) {
+        if (i<=12)
+        console.log(i+" это ребенок")
+        else if (i>=13 && i<=19)
+        console.log(i+" это подросток")
+        else if (i>19 && i<66)
+        console.log(i+" это взрослый")
+        else 
+        console.log(i+" это пенсионер")
+      }
+      let age = prompt("Введите ваш возраст")
+      if (age<13)
+        console.log("Вы ребенок")
+        else if (age>12 && age<20)
+        console.log("Вы  подросток")
+        else if (age>19 && age<66)
+        console.log("Вы взрослый")
+        else 
+        console.log("Вы пенсионер")
+
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        
+    </div>
+    <input id = "plus" type="button" onclick="PlusSmile()" value="Мне дали смайлик!">
+    <input id = "minus" type="button" onclick="MinusSmile()" value="О, нет, 'Пепа'!">
+    <div>
+        <h1 id="name"></h1>
+        <p id="smile"></p>
+    </div>
+    <script>
+        let nick=(prompt("Как тебя зовут?"))
+       name.innerHTML=nick
+       let SmileAmount=0;
+       function PlusSmile(){
+       smile.innerHTML+="=) "
+       SmileAmount++
+       }
+       function MinusSmile(){
+        smile.innerHTML=""
+        SmileAmount--
+       for (let i=0; i<SmileAmount; i++) {
+        smile.innerHTML+="=) "
+       }
+       }
+       
+    </script>
+    
+</body>
+</html>

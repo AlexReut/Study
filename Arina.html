@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       .slider {
+        align-items: center;
+        align-content: center;
+
+     } 
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <script src="./slider.js"></script>
+    Привет, ты попал на мою страницу, где я рассказываю о цветах !
+    <center>Хризантема</center>
+    <center>
+        <div class="slider">
+            <button onclick="prev()"> Prev </button>
+            <img id="slider" src="http://www.sololearn.com/uploads/slider/1.jpg"/>
+            <button onclick="next()"> Next </button>
+        </div>
+       
+    </center>
+    <form action='' method="POST">
+        <p>
+        Опрос:
+        Арина любит цветы?
+        <br/><input type="radio" name="answer" value="a1">Однозначно да
+        <br/><input type="radio" name="answer" value="a2">Нет
+        <br/><input type="radio" name="answer" value="a3">Без понятия
+        <br/>Как вы относитесь к цветам?
+        <br/><input type="text" name="login" style="width:400px;" value="Значение по умолчанию">
+        <br/>Какое мнение у вас об этом сайте?
+        <br/><input style="width:400px; height:150px" type="textarea" name="osebe" value="">
+        <br/><input type="submit" value="OK">
+        <p>
+    </form>
+    <form>
+        <p>А сейчас небольшой опрос про хризантемы?:</p>
+        С какими цветами они живут хорошо?
+        <br/><input type="radio" name="answer" value="a1">с ромашками
+        <br/><input type="radio" name="answer" value="a2">с лютиками
+        <br/><input type="radio" name="answer" value="a3">с геоцинтами
+        <br/><input type="radio" name="answer" value="a4">с ирисами
+        <br/><input type="radio" name="answer" value="a5">с пионами
+        <br/><input type="submit" value="OK">
+    </form>
+    <form>
+        Сколько всего видов хризантем?
+        <br/><input type="radio" name="answer" value="a1">10
+        <br/><input type="radio" name="answer" value="a2">40
+        <br/><input type="radio" name="answer" value="a3">100
+        <br/><input type="radio" name="answer" value="a4">200
+        <br/><input type="radio" name="answer" value="a5">500
+        <br/><input type="submit" value="OK">
+    </form>
+        <br/>
+</body>
+</html>
