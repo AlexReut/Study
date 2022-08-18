@@ -1,0 +1,27 @@
+#main {
+    height: 250px;
+    min-width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .button, #button {    
+        width: 100px;
+        height: 100px;
+        
+         }
+#TextHolder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Text {
+    max-width: 300px;
+    font: 17px/1.5 Arial;
+    padding: 8px 15px;
+    background: radial-gradient(farthest-side ellipse at top left, white, #aaaaaa);
+    border-radius: 12px;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.3);
+    text-align: center;}

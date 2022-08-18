@@ -14,11 +14,9 @@
     width: 100px;
     height: 100px;
     margin: 100px;  
-    src: url(./red-btn.png);  
+    
 }
-#button:active{
-    src: url(./red-btn-p.png);
-}
+
 .TextHolder{
     display: flex;
     justify-content: center;

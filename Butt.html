@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <link rel="stylesheet" href="./Butt.css">
+</head>
+<body>
+    <div id="main" >
+        <img id="button" src="./red-btn.png" alt="Кнопа">   
+        
+    </div>
+    <div id="TextHolder">
+        <div id="Text">Не нажимать!</div>
+
+    </div>
+    <script>
+        let counter=0;
+        button.onclick = function click(){
+            button.src = "./red-btn-p.png"
+            setTimeout(unpress,100)
+            counter++
+            if(counter>=frases.length) counter=0;
+            let frase =document.getElementById("Text")
+            frase.innerText=frases[counter]
+            
+        }
+        function unpress (){button.src = "./red-btn.png"}
+        let frases=[
+            "Не нажимать!",
+            "*КХМ* Написано же - не нажимать!",
+            "Да чтоб тебя... ты снова это сделал!",
+            "Ладно, жамкай снова.",
+            "О да! Снова! Жми! Ещё разок!",
+            "Давай!",
+            "Жми!",
+            "Надеюсь, ты счастлив. Теперь хватит."
+        ]
+    </script>
+</body>
+</html>
