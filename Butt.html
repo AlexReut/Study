@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <link rel="stylesheet" href="./Butt.css">
+</head>
+<body>
+    <div id="main" >
+        <img id="button" src="./red-btn.png" alt="Кнопа">  
+         
+        
+        
+        
+    </div>
+    <div id="TextHolder">
+        <div id="Text">Не нажимать!</div>
+
+    </div>
+    <script>
+        
+        let counter=0;
+        button.onlick = click
+        function click(){
+            button.src = "./red-btn-p.png"
+            setTimeout(unpress,100)
+            counter++
+            if(counter>=frases.length) counter=0;
+            let frase =document.getElementById("Text")
+            frase.innerText=frases[counter]
+            switch (counter){
+                case 8:main.innerHTML="";
+                for(i=0;i<3;i++)
+                if(i==1) AddButt("button")
+                else AddButt("falcebutton")
+                button.onlick = click
+                
+                break;
+            }
+            
+        }
+    
+        function unpress (){button.src = "./red-btn.png"}
+        function AddButt (id){
+            let NewButt = document.createElement('img');
+            NewButt.src = "./red-btn.png";
+            NewButt.id =id;
+            main.append(NewButt)
+
+        }
+        
+        
+        let frases=[
+            "Не нажимать!",
+            "*КХМ* Написано же - не нажимать!",
+            "Да чтоб тебя... ты снова это сделал!",
+            "Ладно, жамкай снова.",
+            "О да! Снова! Жми! Ещё разок!",
+            "Давай!",
+            "Жми!",
+            "Надеюсь, ты счастлив. Теперь хватит.",
+            "Три!"
+        ]
+    </script>
+</body>
+</html>
