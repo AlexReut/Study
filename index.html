@@ -11,12 +11,17 @@
     float: left;
     width: 33.33%;
     padding: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
+}
+#1 {
+    width: 50%;
 }
 </style>
 </head>
@@ -29,8 +34,8 @@
   <div class="img-container">
     <img src="./button_red.png" alt="Fjords" style="width:100%">
   </div>
-  <div class="img-container">
-    <img src="./button_green.png" alt="Forest" style="width:100%">
+  <div class="img-container" style="background-color: blue;">
+    <img id="1" src="./button_green.png" alt="Forest" >
   </div>
   <div class="img-container">
     <img src="./button.png" alt="Mountains" style="width:100%">
