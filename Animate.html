@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #super {
+            transition: all, 100ms;
+            height: 100px;
+            top: 500px;
+            left: 50%;
+            position: absolute;
+        }
+        #main {
+            display: flex;
+            height: 1000px;
+            width: 100%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+    <img id="super" src="https://pluspng.com/img-png/superman-png-superman-png-pic-1024.png" alt="Супер">
+    
+    </div>
+<script>
+    let y=500;
+    let x=50;
+    
+    
+    let superman = document.getElementById("super")
+   superman.onclick = moveUp
+   function moveUp(){
+        y-=10;
+        superman.style.top = y+"px";
+        superman.style.rotate = 0 +"turn";
+        }
+    function moveDown(){
+        y+=10;
+        superman.style.top = y+"px";
+        superman.style.rotate = .5 +"turn";
+        }
+        function moveLeft(){
+        x-=1;
+        superman.style.left = x+"%";
+        superman.style.rotate = .75 +"turn";
+        }
+        function moveRight(){
+        x+=1;
+        superman.style.left = x+"%";
+        superman.style.rotate = .25 +"turn";
+        }
+    
+    document.addEventListener ('keydown', butt);
+function butt (e)  {
+    switch (e.code) {
+       case "KeyW": moveUp()
+       brake;
+       case "KeyS": moveDown()
+       brake;
+       case "KeyA": moveLeft()
+       brake;
+       case "KeyD": moveRight()
+       brake;
+    }
+   console.log('Тип события: ' + e.type); // keydown, keypress, keyup
+   console.log('Witch нажатой клавиши или символа: ' + e.which); // код символа позволяет получить только keypress
+   console.log('Key нажатой клавиши или символа: ' + e.key);
+   console.log('Code нажатой клавиши или символа: ' + e.code);
+   
+}
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="div">
+<p >Просто р</p>
+<p id = "test2" >р по id</p>
+<p name = "test3">p по name</p>
+<p class="test4">p по имени класса</p>
+    </div>
+    <button id="butt" onclick = "alert()">Кнопка</button>
+
+    <script>
+    let element= document.querySelector("[id=test2]")
+    console.log(element.innerText)
+    element.addEventListener("click",click)
+    function click (){ alert()}
+    document.addEventListener('keydown', function(){
+    console.log('Success onkeydown');
+});
+    </script>
+    
+</body>
+</html>

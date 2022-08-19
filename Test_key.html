@@ -1,0 +1,17 @@
+<input id="target" type="text" value="">
+
+<script>
+    
+    let input = document.querySelector("#target")
+document.addEventListener ('keydown', butt);
+function butt (e)  {
+   console.log('Тип события: ' + e.type); // keydown, keypress, keyup
+   console.log('Witch нажатой клавиши или символа: ' + e.which); // код символа позволяет получить только keypress
+   console.log('Key нажатой клавиши или символа: ' + e.key);
+   console.log('Code нажатой клавиши или символа: ' + e.code);
+   console.log('Нажата клавиша Alt: ' + e.altKey);
+   console.log('Нажата клавиша Ctrl: ' + e.ctrlKey);
+   console.log('Нажата клавиша Shift: ' + e.shiftKey);
+   console.log('Нажата клавиша Cmd (osMac): ' + e.metaKey);
+}
+</script>
